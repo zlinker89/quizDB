@@ -1,3 +1,4 @@
+<!-- Embedded JavaScript -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -6,10 +7,10 @@
         <title>Quiz</title>
     </head>
     <body>
-        <form action="/quizes/answer" method="get">
-            Pregunta <%= pregunta %>
+        <form action="/quizes/<%= quiz.id %>/answer" method="get">
+            Pregunta <%= quiz.pregunta %>
             <input type="text" name="respuesta" />
             <input type="submit" value="Responder">
         </form>
-    </body> 
+    </body>
 </html>

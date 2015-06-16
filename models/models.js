@@ -40,6 +40,10 @@ sequelize.sync().success(function () {
                 pregunta: "¿Cual es la capital de Italia?",
                 respuesta: "roma"
             });
+            Quiz.create({
+                pregunta: "¿Cual es la capital de Portugal?",
+                respuesta: "lisboa"
+            });
         }
     });
 });
